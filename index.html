@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking Platform</title>
+  <link rel="stylesheet" href="index.css" />
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+  <!-- If you have a logo image -->
+  <!-- <img src="bus-logo.png" alt="Logo" class="logo-img" /> -->
+  🚌 <span>DHRANJAY BUS SERVICE</span>
+</div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#booking">Booking</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Your Comfort, Our Priority</h1>
+      <p>Book your services with ease and trust.</p>
+      <a href="#booking" class="cta-btn">Book Now</a>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">Hotel Room Booking</div>
+      <div class="card">Event Reservations</div>
+      <div class="card">Salon Appointments</div>
+    </div>
+  </section>
+
+ 
+<form id="bookingForm" action="https://formsubmit.co/abhiskekkumar620@gmail.com" method="POST">
+  <!-- Hidden settings -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://formsubmit.co/thanks.html">
+
+  <!-- Booking fields -->
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <select name="service" required>
+    <option value="">Select Service</option>
+    <option>Hotel</option>
+    <option>Event</option>
+    <option>Salon</option>
+  </select>
+  <input type="date" name="date" required />
+  <button type="submit">Submit</button>
+</form>
+
+
+  <section id="testimonials" class="section">
+    <h2>What Our Clients Say</h2>
+    <div class="cards">
+      <div class="card">"Excellent experience!"</div>
+      <div class="card">"Very professional and quick."</div>
+      <div class="card">"Will use again!"</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: support@bookease.com</p>
+    <p>Phone: +91-9876543210</p>
+  </section>
+</body>
+</html>
